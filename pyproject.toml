@@ -1,0 +1,17 @@
+[project]
+name = "dsa"
+version = "0"
+requires-python = ">=3.13"
+
+[dependency-groups]
+dev =["pytest", "ruff"]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+python_files = ["*.py"]
+python_functions = ["test_*"]
